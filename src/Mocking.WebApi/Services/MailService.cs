@@ -12,7 +12,12 @@ namespace Mocking.WebApi.Services
 
         private readonly IRestClient _restClient; 
         private readonly IRestRequest _restRequest; 
-        private readonly IAuthenticator _authenticator; 
+        private readonly IAuthenticator _authenticator;
+
+        public MailService()
+        {
+
+        }
         public MailService(IRestClient restClient, IRestRequest restRequest, IAuthenticator authenticator)
         {
             _restClient = restClient;
@@ -42,7 +47,6 @@ namespace Mocking.WebApi.Services
 
             return contentToken.resultStatus;
         }
-
         public bool IndependentAuthenticate()
         {
             var mailAccount = new
@@ -66,7 +70,5 @@ namespace Mocking.WebApi.Services
 
             return contentToken.resultStatus;
         }
-
-
     }
 }

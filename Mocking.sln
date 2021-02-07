@@ -4,14 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FDDC59FD-E687-4026-BCED-2414981E48C8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		docs\README.md = docs\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F3A1077-50E2-4791-841E-E73CE81D28D8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A55C0FE8-9C75-4AEB-965F-19E9CC003EDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mocking.WebApi", "src\Mocking.WebApi\Mocking.WebApi.csproj", "{3B0FD5EF-1792-4499-B568-6769017F3F6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mocking.WebApi", "src\Mocking.WebApi\Mocking.WebApi.csproj", "{3B0FD5EF-1792-4499-B568-6769017F3F6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mocking.UnitTest", "test\Mocking.UnitTest\Mocking.UnitTest.csproj", "{AF545DAE-5D82-4C11-9A5C-5AB3FC5B0CA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mocking.UnitTest", "test\Mocking.UnitTest\Mocking.UnitTest.csproj", "{AF545DAE-5D82-4C11-9A5C-5AB3FC5B0CA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
